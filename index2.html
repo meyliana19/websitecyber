@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Meyliana</title>
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Ketika menu HOME diclick
+            $('a[href="indexhome.html"]').click(function(e) {
+                e.preventDefault(); // Mencegah link untuk membuka halaman baru
+                $('.content').load('indexhome.html'); // Memuat konten dari indexhome.html ke dalam div content
+            });
+        });
+        $(document).ready(function() {
+            // Ketika menu HTML diclick
+            $('a[href="indexa.html"]').click(function(e) {
+                e.preventDefault(); // Mencegah link untuk membuka halaman baru
+                $('.content').load('indexa.html'); // Memuat konten dari indexa.html ke dalam div content
+            });
+        });
+        $(document).ready(function() {
+            // Ketika menu CSS diclick
+            $('a[href="indexb.html"]').click(function(e) {
+                e.preventDefault(); // Mencegah link untuk membuka halaman baru
+                $('.content').load('indexb.html'); // Memuat konten dari indexb.html ke dalam div content
+            });
+        });
+        $(document).ready(function() {
+            // Ketika menu PHP diclick
+            $('a[href="indexc.html"]').click(function(e) {
+                e.preventDefault(); // Mencegah link untuk membuka halaman baru
+                $('.content').load('indexc.html'); // Memuat konten dari indexc.html ke dalam div content
+            });
+        });
+        $(document).ready(function() {
+            // Ketika menu Javascript diclick
+            $('a[href="indexd.html"]').click(function(e) {
+                e.preventDefault(); // Mencegah link untuk membuka halaman baru
+                $('.content').load('indexd.html'); // Memuat konten dari indexd.html ke dalam div content
+            });
+        });
+        $(document).ready(function() {
+            // Ketika link tutorial HTML diclick
+            $('a[href="link-artikel.html"]').click(function(e) {
+                e.preventDefault(); // Mencegah link untuk membuka halaman baru
+                $('.content').load('link-artikel.html'); // Memuat konten dari link-artikel.html ke dalam div content
+            });
+        });
+        $(document).ready(function() {
+            // Ketika link tutorial CSS diclick
+            $('a[href="link-artikelcss.html"]').click(function(e) {
+                e.preventDefault(); // Mencegah link untuk membuka halaman baru
+                $('.content').load('link-artikelcss.html'); // Memuat konten dari link-artikelcss.html ke dalam div content
+            });
+        });
+        $(document).ready(function() {
+            // Ketika link tutorial PHP diclick
+            $('a[href="link-artikelphp.html"]').click(function(e) {
+                e.preventDefault(); // Mencegah link untuk membuka halaman baru
+                $('.content').load('link-artikelphp.html'); // Memuat konten dari link-artikelphp.html ke dalam div content
+            });
+        });
+        $(document).ready(function() {
+            // Ketika link tutorial JQuery diclick
+            $('a[href="link-artikeljquery.html"]').click(function(e) {
+                e.preventDefault(); // Mencegah link untuk membuka halaman baru
+                $('.content').load('link-artikeljquery.html'); // Memuat konten dari link-artikeljquery.html ke dalam div content
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <h1>LATIHAN CODING[MEYLIANA]</h1>
+            <p>Belajar membuat layout website sederhana</p>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="indexhome.html">Home</a></li>
+                <li><a href="indexa.html">HTML</a></li>
+                <li><a href="indexb.html">CSS</a></li>
+                <li><a href="indexc.html">PHP</a></li>
+                <li><a href="indexd.html">Javascript</a></li>
+            </ul>
+        </div>
+        <div class="badan">
+            <div class="sidebar">
+                <h3>Sidebar</h3>
+                <ul>
+                    <li><a href="link-artikel.html">Tutorial HTML dasar</a></li>
+                    <li><a href="link-artikelcss.html">Tutorial CSS dasar</a></li>
+                    <li><a href="link-artikelphp.html">Tutorial PHP dasar</a></li>
+                    <li><a href="link-artikeljquery.html">Tutorial JQuery dasar</a></li>
+                </ul>
+            </div>
+            <div class="content">
+                content
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="footer">
+            <p>Footer</p>
+            <p>by: Hikmahtul Meyliana Devi XI TJKT 1</p>
+        </div>
+    </div>
+
+    <!-- Bintang Berkelap-kelip -->
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+</body>
+</html>

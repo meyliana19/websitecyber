@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Font yang lucu */
+    color: #fff; /* Warna teks default */
+    background: #1a1a1a; /* Latar belakang gelap */
+}
+
+.wrap {
+    background: #2a2a2a; /* Latar belakang utama */
+    width: 900px;
+    margin: 10px auto;
+    position: relative; /* Untuk posisi bintang */
+    overflow: hidden; /* Menyembunyikan elemen yang melampaui batas */
+    border-radius: 15px; /* Sudut melengkung */
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.3); /* Bayangan yang lebih cerah */
+}
+
+.header {
+    background: #ffcc00; /* Warna header cerah */
+    padding: 20px;
+    text-align: center; /* Rata tengah */
+    border-top-left-radius: 15px; /* Sudut melengkung */
+    border-top-right-radius: 15px; /* Sudut melengkung */
+}
+
+.menu {
+    background: #ff6699; /* Warna menu cerah */
+}
+
+.menu ul {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.menu ul li {
+    float: left;
+    list-style-type: none;
+    padding: 15px 20px;
+    transition: background 0.3s; /* Transisi saat hover */
+    border-radius: 10px; /* Sudut melengkung pada menu */
+}
+
+.menu ul li:hover {
+    background: rgba(255, 255, 255, 0.3); /* Efek hover */
+}
+
+.clear {
+    clear: both;
+}
+
+.badan {
+    height: 450px;
+    display: flex; /* Menggunakan flexbox untuk tata letak */
+}
+
+.badan .sidebar {
+    background: #ffccff; /* Warna sidebar cerah */
+    width: 25%;
+    padding: 20px;
+    border-right: 2px dashed #fff; /* Garis pemisah putus-putus */
+    width: 25%; /* Lebar sidebar */
+    padding: 10px; /* Padding untuk sidebar */
+    background-color: #ffccff; /* Warna latar belakang sidebar */
+}
+
+.badan .content {
+    background: #66ccff; /* Warna konten cerah */
+    width: 75%;    
+    padding: 20px;
+    position: relative; /* Untuk posisi gambar astronot */
+    width: 75%; /* Lebar konten */
+    padding: 10px; /* Padding untuk konten */
+    height: 400px; /* Tinggi tetap untuk konten */
+    overflow-y: auto; /* Mengizinkan scroll vertikal */
+    border: 1px solid #ccc; /* Garis batas untuk konten */
+    background-color: #66ccff; /* Warna latar belakang konten */
+}
+
+.astronaut {
+    position: relative;
+    animation: float 3s ease-in-out infinite; /* Animasi mengapung */
+    width: 120px; /* Atur ukuran gambar astronot */
+    display: block; /* Menampilkan gambar sebagai blok */
+    margin: 0 auto; /* Rata tengah */
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0); }
+}
+
+.footer {
+    width: 100%;
+    padding: 10px;
+    background: #ffcc00; /* Warna footer cerah */
+    text-align: center;
+    border-bottom-left-radius: 15px; /* Sudut melengkung */
+    border-bottom-right-radius: 15px; /* Sudut melengkung */
+}
+
+/* Bintang Berkelap-kelip */
+.star {
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    width: 3px; /* Ukuran bintang lebih besar */
+    height: 3px;
+    animation: twinkle 1.5s infinite;
+}
+
+/* Menghasilkan bintang secara acak */
+@keyframes twinkle {
+    0% { opacity: 0.5; }
+    50% { opacity: 1; }
+    100% { opacity: 0.5; }
+}
+.cartoon {
+    position: absolute; /* Posisi absolut untuk menempatkan di pojok */
+    bottom: 10px; /* Jarak dari bawah */
+    right: 10px; /* Jarak dari kanan */
+    width: 100px; /* Atur lebar gambar */
+    animation: bounce 2s infinite; /* Animasi melompat */
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0); /* Posisi awal */
+    }
+    40% {
+        transform: translateY(-20px); /* Melompat ke atas */
+    }
+    60% {
+        transform: translateY(-10px); /* Melompat sedikit */
+    }
+}
+
+/* Mengatur posisi bintang secara acak */
+.star:nth-child(1) { top: 10%; left: 20%; }
+.star:nth-child(2) { top: 30%; left: 50%; }
+.star:nth-child(3) { top: 50%; left: 70%; }
+.star:nth-child(4) { top: 70%; left: 30%; }
+.star:nth-child(5) { top: 90%; left: 80%; }
